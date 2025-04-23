@@ -1,0 +1,25 @@
+<!-- src/app/pages/materiels/materiel-list/materiel-list.component.html -->
+<div class="mb-3">
+    <a class="btn btn-success" [routerLink]="['/materiels/add']">➕ Ajouter un matériel</a>
+  </div>
+  
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Quantité</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of materiels">
+        <td>{{ m.nom }}</td>
+        <td>{{ m.quantite }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm" [routerLink]="['/materiels/edit', m.id]">✏️</button>
+          <button class="btn btn-danger btn-sm" (click)="delete(m.id!)">🗑️</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

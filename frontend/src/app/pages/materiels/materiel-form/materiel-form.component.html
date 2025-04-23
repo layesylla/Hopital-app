@@ -1,0 +1,14 @@
+<!-- src/app/pages/materiels/materiel-form/materiel-form.component.html -->
+<h3>{{ isEdit ? 'Modifier' : 'Ajouter' }} un matériel</h3>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Nom</label>
+    <input type="text" class="form-control" [(ngModel)]="materiel.nom" name="nom" required>
+  </div>
+  <div class="form-group">
+    <label>Quantité</label>
+    <input type="number" class="form-control" [(ngModel)]="materiel.quantite" name="quantite" required>
+  </div>
+  <button class="btn btn-primary mt-2" type="submit">💾 Enregistrer</button>
+</form>

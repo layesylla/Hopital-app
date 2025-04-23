@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\bmd\Downloads\hopital-backend\hopital-backend\app\models\Models.scala:13:82: identifier expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mcase class NoteMedicale(id: Option[Long], patientId: Long,medecinId: Long contenu: String, date: String)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\bmd\Downloads\hopital-backend\hopital-backend\app\models\Models.scala:91:2: ')' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

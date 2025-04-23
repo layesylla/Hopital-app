@@ -1,0 +1,64 @@
+# --- PATIENTS ---
+GET     /patients                      controllers.PatientController.listPatients
+POST    /patients                      controllers.PatientController.createPatient
+GET     /patients/search              controllers.PatientController.searchPatient(nom: String)
+GET     /patients/:id                 controllers.PatientController.getPatient(id: Long)
+PUT     /patients/:id                 controllers.PatientController.updatePatient(id: Long)
+DELETE  /patients/:id                 controllers.PatientController.deletePatient(id: Long)
+
+# --- MEDECINS ---
+GET     /medecins                     controllers.MedecinController.listMedecins
+POST    /medecins                     controllers.MedecinController.createMedecin
+GET     /medecins/:id                 controllers.MedecinController.getMedecin(id: Long)
+PUT     /medecins/:id                 controllers.MedecinController.updateMedecin(id: Long)
+DELETE  /medecins/:id                 controllers.MedecinController.deleteMedecin(id: Long)
+
+# --- INFIRMIERS ---
+GET     /infirmiers                   controllers.InfirmierController.list
+POST    /infirmiers                   controllers.InfirmierController.create
+GET     /infirmiers/:id               controllers.InfirmierController.get(id: Long)
+PUT     /infirmiers/:id               controllers.InfirmierController.update(id: Long)
+DELETE  /infirmiers/:id               controllers.InfirmierController.delete(id: Long)
+
+# --- CHAMBRES ---
+GET     /chambres                     controllers.ChambreController.list
+POST    /chambres                     controllers.ChambreController.create
+GET     /chambres/:id                 controllers.ChambreController.get(id: Long)
+PUT     /chambres/:id                 controllers.ChambreController.update(id: Long)
+DELETE  /chambres/:id                 controllers.ChambreController.delete(id: Long)
+
+# --- MATERIELS ---
+GET     /materiels                    controllers.MaterielController.list
+POST    /materiels                    controllers.MaterielController.create
+GET     /materiels/:id                controllers.MaterielController.get(id: Long)
+PUT     /materiels/:id                controllers.MaterielController.update(id: Long)
+DELETE  /materiels/:id                controllers.MaterielController.delete(id: Long)
+
+# --- PAIEMENTS ---
+GET     /paiements                    controllers.PaiementController.list
+POST    /paiements                    controllers.PaiementController.create
+GET     /paiements/:id                controllers.PaiementController.get(id: Long)
+PUT     /paiements/:id                controllers.PaiementController.update(id: Long)
+DELETE  /paiements/:id                controllers.PaiementController.delete(id: Long)
+
+# Hospitalisations
+GET     /hospitalisations              controllers.HospitalisationController.list
+POST    /hospitalisations              controllers.HospitalisationController.create
+GET     /hospitalisations/:id          controllers.HospitalisationController.get(id: Long)
+PUT     /hospitalisations/:id          controllers.HospitalisationController.update(id: Long)
+DELETE  /hospitalisations/:id          controllers.HospitalisationController.delete(id: Long)
+
+# Notes Médicales
+GET     /notes                         controllers.NoteMedicaleController.list
+POST    /notes                         controllers.NoteMedicaleController.create
+GET     /notes/:id                     controllers.NoteMedicaleController.get(id: Long)
+PUT     /notes/:id                     controllers.NoteMedicaleController.update(id: Long)
+DELETE  /notes/:id                     controllers.NoteMedicaleController.delete(id: Long)
+
+# Rendez-vous
+GET     /rendezvous                    controllers.RendezVousController.list
+POST    /rendezvous                    controllers.RendezVousController.create
+GET     /rendezvous/:id                controllers.RendezVousController.get(id: Long)
+PUT     /rendezvous/:id                controllers.RendezVousController.update(id: Long)
+DELETE  /rendezvous/:id                controllers.RendezVousController.delete(id: Long)
+
